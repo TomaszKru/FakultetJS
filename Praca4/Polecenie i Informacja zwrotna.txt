@@ -1,0 +1,15 @@
+Stwórz stronę internetową implementującą quiz.
+Dane quizu (tytuł, pytania i odpowiedzi) powinny być przechowywane w osobnym pliku o nazwie quiz.json (przykładowy plik z danymi z powyższego przykładu) i ładowane przez skrypt na samym początku (AJAX).
+Skrypt ma działać w ten sposób, że do zmiany danych quizu (tytułu, pytań, odpowiedzi) powinna wystarczyć zmiana zawartości pliku (bez zmian w kodzie).
+
+Sprawdzenie poprawności odpowiedzi odbywa się po kliknięciu przycisku „Sprawdź”. Do wyświetlenia okna z wynikami można użyć funkcji alert.
+
+W odpowiedziach ignorowane są nadmiarowe spacje na początku i końcu (tzn. mają nie wpływać na to czy odpowiedź jest poprawna). Po sprawdzeniu wszystkie pola input zmieniają odpowiednio kolor (na różowy dla błędnych i na zielony dla poprawnych).
+
+
+
+
+Do poprawy:
+Brak obsługi błędów takich jak:
+* brak pliku "quiz.json",
+* brak odpowiednich pól w pliku JSON,

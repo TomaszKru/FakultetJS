@@ -1,0 +1,10 @@
+twórz stronę umożliwiającą wygenerowanie tabliczki mnożenia — użytkownik w polu tekstowym podaje liczbę i jeżeli jest to poprawna liczba całkowita większa od 1 i mniejsza lub równa 100, to wyświetla tabliczkę mnożenia dla wszystkich par liczb z zakresu od 1 do podanej liczby. Jeżeli nie, to na stronie wyświetla się odpowiedni komunikat (np. „Musisz podać liczbę całkowitą z zakresu 1-100”).
+
+Od razu po wejściu na stronę focus ma być ustawiony w polu tekstowym, a wartość pola ma być ustawiona na 10. Pole ma reagować na klawisz Enter.
+
+Jeżeli tabliczka mnożenia jest już wygenerowana, to przed wygenerowaniem kolejnej ze strony usuwana jest stara tabliczka (jeżeli nowa tabliczka jest dla tego samego zakresu co stara, to nie powinna być usuwana stara i generowana taka sama — po prostu nie powinno się nic dziać).
+
+
+
+Do poprawy: 
+Program pozwala na wpisanie również liczb zmiennoprzecinkowych.

@@ -1,0 +1,9 @@
+Stwórz stronę z polem tekstowym, przyciskiem i mapą.
+
+Po wpisaniu nazwy obiektu i kliknięciu przycisku, na stronie wyświetlona ma być lista nazw (pole display_name w odpowiedzi z serwisu Nominatim) tych znalezionych obiektów typu Polygon lub MultiPolygon, które w całości znajdują się w województwie lubelskim.
+
+Po kliknięciu w element listy kształt odpowiedniego obiektu ma się pojawić na mapie.
+
+Do sprawdzenia czy obiekt leży w województwie lubelskim, możesz użyć odpowiedniej funkcji biblioteki Turf.js, np. booleanWithin.
+
+Kształt województwa lubelskiego powinien być na początku pobrany przez skrypt z serwisu Nominatim, a mapa powinna być od razu odpowiednio ustawiona tak, żeby widoczny był cały obszar województwa. Ustawienie mapy powinno być uzależnione od danych o województwie z serwisu Nominatim, a nie ustawione w skrypcie na sztywno.

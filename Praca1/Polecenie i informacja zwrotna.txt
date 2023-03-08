@@ -1,0 +1,36 @@
+twórz stronę, na której można sprawdzić informacje zawarte w numerze PESEL — płeć oraz datę urodzenia (rok, miesiąc i dzień). Na stronie powinno być pole tekstowe do wpisania numeru PESEL oraz przycisk, po naciśnięciu którego wyświetlane są żądane informacje. Informacje wyświetlane są w przygotowanych wcześniej i odpowiednio podpisanych elementach HTML (np. output).
+
+Jeżeli wpisany napis nie jest w poprawnym formacie, tzn. ma długość inną niż 11 lub zawiera znaki inne niż cyfry (nie trzeba sprawdzać innych błędów w PESELU, np. błędna data lub błędna cyfra kontrolna), to na stronie powinien pojawić się odpowieni komunikat (również w przygotowanym wcześniej elemencie HTML).
+Stwórz stronę do sprawdzania numeru PESEL taką jak opisana w poprzednim zadaniu, ale z dokładnym sprawdzeniem wszystkich możliwych błędów. W przypadku błędu strona powinna wyświetlać dokładny komunikat o tym na czym polega błąd z podziałem na:
+
+Dodatkowo uwzględnić błędy: 
+-zła długość numeru PESEL,
+-numer PESEL nie składa się z samych cyfr,
+-błędna cyfra kontrolna,
+-błędna data.
+W przypadku daty trzeba sprawdzić zarówno miesiąc (czy jest z zakresu 1–12) jak i dzień. W przypadku dnia należy uwzględnić liczbę dni w danym miesiącu (i w przypadku lutego należy uwzględnić lata przestępne).
+
+
+
+
+
+Do poprawy:
+
+Nie jest wyświetlana informacja o tym na czym polega błąd. Jest tylko ogólny
+komunikat "Podano zły numer PESEL" (mimo, że jest to dokładnie sprawdzane
+przez skrypt).
+
+Jeżeli został wykryty błąd, to nie bardzo jest sens liczyć dalej i wyświetlać
+jakieś dane (te dane nie mają wtedy sensu).
+
+Nie całkiem udane sprawdzenie tego, czy PESEL składa się z samych cyfr.
+Funkcja "Number.isNaN" wywołana po konwersji napisu na liczbę zwróci "false"
+np. dla napisów "123456789.1" bądź "-1234567891".
+
+Drobny błąd przy sprawdzaniu cyfry kontrolnej (ale powtórzony za
+wyjaśnieniem ze strony "gov.pl" więc nie ucinam za niego punktów). Suma
+obliczana podczas liczenia cyfry kontrolnej może wynieść 0. Wtedy cyfrą
+kontrolną powinno być 0, a zgodnie z wyjaśnieniem ze strony będzie to
+10 - 0, czyli 10.
+
+Błędne odczytanie miesiąca i roku.
